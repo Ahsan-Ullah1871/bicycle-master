@@ -1,0 +1,42 @@
+.topBanner {
+	height: 700px;
+	background-image: url(../../../../images/BannerBg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	filter: blur(6px);
+	-webkit-filter: blur(6px);
+}
+.bannerText {
+	background-color: rgb(0, 0, 0); /* Fallback color */
+	background-color: rgba(0, 0, 0, 0.4); /* Black w/opacity/see-through */
+	color: white;
+	font-weight: bold;
+	border: 3px solid #f1f1f1;
+	position: absolute;
+	top: 80%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	width: 80%;
+	padding: 20px;
+	text-align: center;
+}
+.bannerText h1 {
+	font-size: 80px;
+}
+.special-Button {
+	background-color: #c75239;
+	padding: 15px 30px;
+	font-size: 20px;
+	color: blanchedalmond;
+	border: none;
+	border-color: none;
+}
+.special-Button:hover,
+.special-Button:focus {
+	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
+	transform: translateY(-0.35em);
+	background-color: #161111;
+	transition: transform 0.9s ease-in-out;
+}
