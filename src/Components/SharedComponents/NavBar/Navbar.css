@@ -3,6 +3,10 @@
 	height: 100px;
 	margin: 20px 0;
 }
+.logo img {
+	width: 200px;
+}
+
 .navMenu a {
 	margin: 10px 25px;
 	color: black;

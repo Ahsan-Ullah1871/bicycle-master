@@ -1,0 +1,9 @@
+.socialLinks a {
+	color: wheat;
+	font-size: 30px;
+	margin: 0 15px;
+}
+.socialLinks a:hover {
+	text-decoration: none;
+	color: #ff6347;
+}

@@ -1,0 +1,13 @@
+.footerHeader {
+	background-image: url(../../../../images/footerHeaderbg.jpg);
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	height: 300px;
+	margin-top: 150px;
+	color: white;
+}
+.callIcon img {
+	width: 90px;
+	margin-right: 15px;
+}

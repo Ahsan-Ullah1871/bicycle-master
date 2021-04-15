@@ -1,0 +1,23 @@
+.serviceCol {
+	background-color: #c75239;
+	padding: 20px;
+	margin: 20px 20px;
+}
+.serviceCol:hover {
+	background-color: #1c1c18;
+	transition: background-color 0.9s;
+}
+
+.serviceNestedDiv {
+	width: 300px;
+	border: 1px solid #fefefe;
+	padding: 30px;
+	text-align: center;
+	color: #fefefe;
+}
+
+.serviceVector img {
+	width: 80px;
+	filter: brightness(0) invert(1);
+	margin-bottom: 10px;
+}
