@@ -10,10 +10,12 @@ const NavBar = () => {
 				<img src={logo} alt="" />
 			</div>
 			<div className="navMenu">
-				<Link>Home</Link>
-				<Link>About Us</Link>
-				<Link>Services</Link>
-				<Link>LogIn</Link>
+				<Link to="/home">Home</Link>
+				<Link to="/dashboard">Dashboard</Link>
+				<Link to="/dashboard/dashboardBookNow">
+					Services
+				</Link>
+				<Link to="login">LogIn</Link>
 			</div>
 		</div>
 	);

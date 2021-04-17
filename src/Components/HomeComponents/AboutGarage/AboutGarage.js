@@ -14,45 +14,33 @@ const AboutGarage = () => {
 					<div className="aboutText">
 						<div className="aboutHeader">
 							<h5>
-								Consectetur adipiscing
-								elit, sed do eiusmod
-								tempor incididunt ut
-								labore et dolore magna
-								aliqua.
+								We always try our best
+								to give you our best
+								service. We try to solve
+								our customers' problems
+								with all kinds of
+								services.
 							</h5>
 						</div>
 						<div className="aboutDescription">
 							<p>
-								Elit duis tristique
-								sollicitudin nibh sit
-								amet. Integer feugiat
-								scelerisque varius morbi
-								enim nunc faucibus. Eget
-								duis at tellus at urna
-								condimentum. Cursus
-								euismod quis viverra
-								nibh cras pulvinar. Quam
-								nulla porttitor massa id
-								neque. Amet mattis
-								vulputate enim nulla
-								aliquet porttitor lacus
-								luctus. Sit amet
-								consectetur adipiscing
-								elit duis tristique.
-								Venenatis tellus in
-								metus vulputate eu. Sed
-								turpis tincidunt id
-								aliquet risus feugiat.
-								Ut tellus elementum
-								sagittis vitae et leo
-								duis ut. Fermentum et
-								sollicitudin ac orci.
-								Lectus magna fringilla
-								urna porttitor rhoncus
-								dolor purus non. Ornare
-								arcu odio ut sem nulla.
-								Ut eu sem integer vitae
-								justo.
+								We are the only country
+								in the country that
+								provides online services
+								with full assurance and
+								efficiency. We always
+								have skilled craftsmen
+								ready for our work. We
+								try to work as fast as
+								possible wherever we are
+								in our office hours. Our
+								head office is at
+								Rangpur Sadar. In
+								addition, we have two
+								branches in each
+								district. Where you can
+								get the service anytime
+								between 10 am to 10 pm.
 							</p>
 						</div>
 					</div>

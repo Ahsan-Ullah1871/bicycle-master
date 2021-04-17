@@ -15,9 +15,9 @@ const ChooseUsPart = () => {
 					<h1>Why Choose Us</h1>
 					<SpecialIcon />
 					<p className="mt-5">
-						Consectetur adipiscing elit, sed do
-						eiusmod tempor incididunt ut labore et
-						dolore magna aliqua.
+						We want to give you our best work. We
+						want you to be satisfied with our
+						work.
 					</p>
 					<br />
 					<ChooseUsPartCard />

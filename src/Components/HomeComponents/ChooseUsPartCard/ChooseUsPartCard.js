@@ -11,13 +11,14 @@ const ChooseUsPartCard = () => {
 						<img src={iconChoose} alt="" />
 					</div>
 					<div className="informationPart ">
-						<h3>Expert Mechanics</h3>
+						<h3>Advanced machines</h3>
 						<p>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Ut
-							elit tellus, luctus nec
-							ullamcorper mattis, pulvinar
-							dapibus leo.
+							We have all kinds of high
+							quality equipment. We always
+							try to have any kind of good
+							quality equipment.Whatever kind
+							of service you get from us,
+							that effort.
 						</p>
 					</div>
 				</div>
@@ -28,11 +29,11 @@ const ChooseUsPartCard = () => {
 					<div className="informationPart">
 						<h3>Expert Mechanics</h3>
 						<p>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Ut
-							elit tellus, luctus nec
-							ullamcorper mattis, pulvinar
-							dapibus leo.
+							Those of us who work here are
+							very skilled. They are 100%
+							skilled in their cause. They
+							have various awards for their
+							workmanship and skills.
 						</p>
 					</div>
 				</div>
@@ -43,13 +44,13 @@ const ChooseUsPartCard = () => {
 						<img src={iconChoose} alt="" />
 					</div>
 					<div className="informationPart">
-						<h3>Expert Mechanics</h3>
+						<h3>Fast Services</h3>
 						<p>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Ut
-							elit tellus, luctus nec
-							ullamcorper mattis, pulvinar
-							dapibus leo.
+							We always try to give very fast
+							service. We have special team
+							for fast service. They give
+							very fast service. We solve any
+							problem within one hour.
 						</p>
 					</div>
 				</div>
@@ -58,13 +59,14 @@ const ChooseUsPartCard = () => {
 						<img src={iconChoose} alt="" />
 					</div>
 					<div className="informationPart">
-						<h3>Expert Mechanics</h3>
+						<h3>Adorable Price</h3>
 						<p>
-							Lorem ipsum dolor sit amet,
-							consectetur adipiscing elit. Ut
-							elit tellus, luctus nec
-							ullamcorper mattis, pulvinar
-							dapibus leo.
+							We always try to do everything
+							at a low price. We want
+							everyone to get the best
+							service from us. For this we
+							try to keep the price of our
+							service very low.
 						</p>
 					</div>
 				</div>

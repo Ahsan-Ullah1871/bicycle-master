@@ -1,36 +1,21 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Services.css";
 import icon from "../../../images/services.png";
 import ServicesCard from "../ServicesCard/ServicesCard";
 import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
+import axios from "axios";
 
-const services = [
-	{
-		serviceName: "Fixing Bike",
-		serviceIcon: icon,
-		serviceDescription:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-	},
-	{
-		serviceName: "Fixing Bike",
-		serviceIcon: icon,
-		serviceDescription:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-	},
-	{
-		serviceName: "Fixing Bike",
-		serviceIcon: icon,
-		serviceDescription:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-	},
-	{
-		serviceName: "Fixing Bike",
-		serviceIcon: icon,
-		serviceDescription:
-			"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit tellus, luctus nec ullamcorper mattis, pulvinar dapibus leo.",
-	},
-];
 const Services = () => {
+	const [services, setServices] = useState(null);
+	useEffect(() => {
+		axios({
+			method: "get",
+			url: "https://salty-retreat-17704.herokuapp.com/services",
+			responseType: "stream",
+		}).then(function (response) {
+			setServices(response.data);
+		});
+	}, []);
 	return (
 		<div className="servicesPart " style={{ marginTop: "180px" }}>
 			<div className="servicesHeader justify-content-center mt-5 pt-5">
@@ -45,7 +30,7 @@ const Services = () => {
 				</p>
 			</div>
 			<div className="row w-100 d-flex justify-content-center mt-5">
-				{services.map((service) => (
+				{services?.map((service) => (
 					<ServicesCard service={service} />
 				))}
 			</div>

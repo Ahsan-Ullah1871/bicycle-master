@@ -1,42 +1,22 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./TestimonialSlider.css";
 import "react-responsive-carousel/lib/styles/carousel.min.css";
 import { Carousel } from "react-responsive-carousel";
 import photo from "../../../../images/review.png";
 import TestimonialCard from "../TestimonialCard/TestimonialCard";
-
-const testimonials = [
-	{
-		name: "Ahsan",
-		photo: photo,
-		work: "study",
-		review:
-			"Elit duis tristique sollicitudin nibh sit amet. Integer feugiat scelerisque varius morbi enim nunc faucibus. Eget duis at tellus at urna condimentum. Cursus euismod quis viverra nibh cras pulvinar. Quam nulla porttitor massa id neque",
-	},
-	{
-		name: "Ahsan",
-		photo: photo,
-		work: "study",
-		review:
-			"Elit duis tristique sollicitudin nibh sit amet. Integer feugiat scelerisque varius morbi enim nunc faucibus. Eget duis at tellus at urna condimentum. Cursus euismod quis viverra nibh cras pulvinar. Quam nulla porttitor massa id neque",
-	},
-	{
-		name: "Ahsan",
-		photo: photo,
-		work: "study",
-		review:
-			"Elit duis tristique sollicitudin nibh sit amet. Integer feugiat scelerisque varius morbi enim nunc faucibus. Eget duis at tellus at urna condimentum. Cursus euismod quis viverra nibh cras pulvinar. Quam nulla porttitor massa id neque",
-	},
-	{
-		name: "Ahsan",
-		photo: photo,
-		work: "study",
-		review:
-			"Elit duis tristique sollicitudin nibh sit amet. Integer feugiat scelerisque varius morbi enim nunc faucibus. Eget duis at tellus at urna condimentum. Cursus euismod quis viverra nibh cras pulvinar. Quam nulla porttitor massa id neque",
-	},
-];
+import axios from "axios";
 
 const TestimonialSlider = () => {
+	const [testimonials, setTestimonials] = useState(null);
+	useEffect(() => {
+		axios({
+			method: "get",
+			url: "https://salty-retreat-17704.herokuapp.com/reviews",
+			responseType: "stream",
+		}).then(function (response) {
+			setTestimonials(response.data);
+		});
+	}, []);
 	return (
 		<div>
 			<Carousel
@@ -47,7 +27,7 @@ const TestimonialSlider = () => {
 				autoPlay={true}
 				interval={6100}
 			>
-				{testimonials.map((testimonial) => (
+				{testimonials?.map((testimonial) => (
 					<TestimonialCard testimonial={testimonial} />
 				))}
 			</Carousel>
