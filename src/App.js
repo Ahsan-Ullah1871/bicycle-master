@@ -28,18 +28,20 @@ function App() {
 	return (
 		<UserContext.Provider value={[user, setUser]}>
 			<Router>
-				<Route exact path="/">
-					<HomePart />
-				</Route>
-				<Route path="/home">
-					<HomePart />
-				</Route>
-				<PrivateRoute path="/dashboard">
-					<DashboardMain />
-				</PrivateRoute>
-				<Route path="/login">
-					<LoginPage />
-				</Route>
+				<Switch>
+					<Route exact path="/">
+						<HomePart />
+					</Route>
+					<Route path="/home">
+						<HomePart />
+					</Route>
+					<PrivateRoute path="/dashboard">
+						<DashboardMain />
+					</PrivateRoute>
+					<Route path="/login">
+						<LoginPage />
+					</Route>
+				</Switch>
 			</Router>
 		</UserContext.Provider>
 	);
