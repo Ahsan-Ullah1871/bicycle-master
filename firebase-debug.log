@@ -1,0 +1,110 @@
+[debug] [2021-04-17T22:31:41.117Z] ----------------------------------------------------------------------
+[debug] [2021-04-17T22:31:41.120Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ahsan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-17T22:31:41.121Z] CLI Version:   9.10.0
+[debug] [2021-04-17T22:31:41.121Z] Platform:      win32
+[debug] [2021-04-17T22:31:41.121Z] Node Version:  v15.9.0
+[debug] [2021-04-17T22:31:41.135Z] Time:          Sun Apr 18 2021 04:31:41 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-17T22:31:41.135Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-17T22:31:41.159Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-17T22:31:41.159Z] > authorizing via signed-in user (ahsanullahsunsbd@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Ahsan\Desktop\ProgrammingProject\Assignment11\bike-repair-client
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using bicycle--master. 
+[debug] [2021-04-17T22:31:53.064Z] > refreshing access token with scopes: []
+[debug] [2021-04-17T22:31:53.066Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-17T22:31:53.551Z] <<< HTTP RESPONSE 200 {"cache-control":"no-cache, no-store, max-age=0, must-revalidate","date":"Sat, 17 Apr 2021 22:31:53 GMT","pragma":"no-cache","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-17T22:31:53.582Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master [none]
+[debug] [2021-04-17T22:31:54.097Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master 200
+[debug] [2021-04-17T22:31:54.098Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master {"projectId":"bicycle--master","projectNumber":"799849882600","displayName":"bicycle -master","name":"projects/bicycle--master","resources":{"hostingSite":"bicycle--master"},"state":"ACTIVE"}
+[info] 
+=== Database Setup
+[info] i  database: ensuring required API firebasedatabase.googleapis.com is enabled... 
+[debug] [2021-04-17T22:31:54.108Z] > refreshing access token with scopes: ["email","https://www.googleapis.com/auth/cloud-platform","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","openid"]
+[debug] [2021-04-17T22:31:54.109Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-17T22:31:54.352Z] <<< HTTP RESPONSE 200 {"date":"Sat, 17 Apr 2021 22:31:54 GMT","pragma":"no-cache","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-17T22:31:54.370Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/bicycle--master/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-17T22:31:56.115Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Apr 2021 22:31:56 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[warn] !  database: missing required API firebasedatabase.googleapis.com. Enabling now... 
+[debug] [2021-04-17T22:31:56.121Z] >>> HTTP REQUEST POST https://serviceusage.googleapis.com/v1/projects/bicycle--master/services/firebasedatabase.googleapis.com:enable  
+ 
+[debug] [2021-04-17T22:31:57.874Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Apr 2021 22:31:57 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-17T22:32:07.888Z] >>> HTTP REQUEST GET https://serviceusage.googleapis.com/v1/projects/bicycle--master/services/firebasedatabase.googleapis.com  
+ 
+[debug] [2021-04-17T22:32:32.796Z] <<< HTTP RESPONSE 200 {"content-type":"application/json; charset=UTF-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","date":"Sat, 17 Apr 2021 22:32:14 GMT","server":"ESF","cache-control":"private","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[info] +  database: required API firebasedatabase.googleapis.com is enabled 
+[info] 
+[debug] [2021-04-17T22:32:32.816Z] > refreshing access token with scopes: []
+[debug] [2021-04-17T22:32:32.817Z] >>> HTTP REQUEST POST https://www.googleapis.com/oauth2/v3/token  
+ <request body omitted>
+[debug] [2021-04-17T22:32:33.058Z] <<< HTTP RESPONSE 200 {"date":"Sat, 17 Apr 2021 22:32:33 GMT","cache-control":"no-cache, no-store, max-age=0, must-revalidate","expires":"Mon, 01 Jan 1990 00:00:00 GMT","pragma":"no-cache","content-type":"application/json; charset=utf-8","vary":"X-Origin, Referer, Origin,Accept-Encoding","server":"scaffolding on HTTPServer2","x-xss-protection":"0","x-frame-options":"SAMEORIGIN","x-content-type-options":"nosniff","alt-svc":"h3-29=\":443\"; ma=2592000,h3-T051=\":443\"; ma=2592000,h3-Q050=\":443\"; ma=2592000,h3-Q046=\":443\"; ma=2592000,h3-Q043=\":443\"; ma=2592000,quic=\":443\"; ma=2592000; v=\"46,43\"","accept-ranges":"none","transfer-encoding":"chunked"}
+[debug] [2021-04-17T22:32:33.085Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master [none]
+[debug] [2021-04-17T22:32:33.545Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master 200
+[debug] [2021-04-17T22:32:33.546Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master {"projectId":"bicycle--master","projectNumber":"799849882600","displayName":"bicycle -master","name":"projects/bicycle--master","resources":{"hostingSite":"bicycle--master"},"state":"ACTIVE"}
+[debug] [2021-04-17T22:33:20.410Z] ----------------------------------------------------------------------
+[debug] [2021-04-17T22:33:20.413Z] Command:       C:\Program Files\nodejs\node.exe C:\Users\Ahsan\AppData\Roaming\npm\node_modules\firebase-tools\lib\bin\firebase.js init
+[debug] [2021-04-17T22:33:20.413Z] CLI Version:   9.10.0
+[debug] [2021-04-17T22:33:20.414Z] Platform:      win32
+[debug] [2021-04-17T22:33:20.414Z] Node Version:  v15.9.0
+[debug] [2021-04-17T22:33:20.415Z] Time:          Sun Apr 18 2021 04:33:20 GMT+0600 (Bangladesh Standard Time)
+[debug] [2021-04-17T22:33:20.415Z] ----------------------------------------------------------------------
+[debug] 
+[debug] [2021-04-17T22:33:20.424Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2021-04-17T22:33:20.425Z] > authorizing via signed-in user (ahsanullahsunsbd@gmail.com)
+[info] 
+     ######## #### ########  ######## ########     ###     ######  ########
+     ##        ##  ##     ## ##       ##     ##  ##   ##  ##       ##
+     ######    ##  ########  ######   ########  #########  ######  ######
+     ##        ##  ##    ##  ##       ##     ## ##     ##       ## ##
+     ##       #### ##     ## ######## ########  ##     ##  ######  ########
+
+You're about to initialize a Firebase project in this directory:
+
+  C:\Users\Ahsan\Desktop\ProgrammingProject\Assignment11\bike-repair-client
+
+Before we get started, keep in mind:
+
+  * You are initializing in an existing Firebase project directory
+
+[info] 
+=== Project Setup
+[info] 
+[info] First, let's associate this project directory with a Firebase project.
+[info] You can create multiple project aliases by running firebase use --add, 
+[info] but for now we'll just set up a default project.
+[info] 
+[info] i  .firebaserc already has a default project, using bicycle--master. 
+[debug] [2021-04-17T22:33:28.527Z] >>> [apiv2][query] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master [none]
+[debug] [2021-04-17T22:33:40.309Z] <<< [apiv2][status] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master 200
+[debug] [2021-04-17T22:33:40.309Z] <<< [apiv2][body] GET https://firebase.googleapis.com/v1beta1/projects/bicycle--master {"projectId":"bicycle--master","projectNumber":"799849882600","displayName":"bicycle -master","name":"projects/bicycle--master","resources":{"hostingSite":"bicycle--master"},"state":"ACTIVE"}
+[info] 
+=== Hosting Setup
+[info] 
+[info] Your public directory is the folder (relative to your project directory) that
+[info] will contain Hosting assets to be uploaded with firebase deploy. If you
+[info] have a build process for your assets, use your build's output directory.
+[info] 
+[debug] [2021-04-17T22:34:01.505Z] >>> [apiv2][query] GET https://www.gstatic.com/firebasejs/releases.json [none]
