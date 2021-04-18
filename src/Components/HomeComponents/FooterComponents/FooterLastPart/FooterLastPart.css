@@ -7,3 +7,14 @@
 	text-decoration: none;
 	color: #ff6347;
 }
+
+@media only screen and (max-width: 700px) {
+	.socialLinks {
+		margin: 20px 25%;
+		display: block;
+		width: 100%;
+	}
+	.copyRightAlert{
+		text-align:center;
+	}
+}

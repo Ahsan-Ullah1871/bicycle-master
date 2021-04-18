@@ -15,7 +15,9 @@ const BookingListForm = ({ booking }) => {
 						src={booking.servicePhoto}
 						alt=""
 					/>
-					<Button>{booking.status}</Button>
+					<Button variant="primary">
+						{booking.status}
+					</Button>
 				</Card.Header>
 				<Card.Body>
 					<Card.Title>

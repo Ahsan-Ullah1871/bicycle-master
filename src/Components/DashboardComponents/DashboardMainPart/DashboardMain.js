@@ -22,17 +22,22 @@ import BookNowPart from "../BookNowComponents/BookNowPart/BookNowPart";
 import Services from "../../HomeComponents/Services/Services";
 import DashboardServices from "../DashboardServices/DashboardServices";
 import ManageServices from "../ManageServices/ManageServices";
+import { Nav, Navbar } from "react-bootstrap";
+import MobileSideBar from "../../SharedComponents/MobileSideBar/MobileSideBar";
 
 const DashboardMain = () => {
 	const [user, setUser] = useContext(UserContext);
 	let { path, url } = useRouteMatch();
 
 	return (
-		<div className="row DashBoardMainStyle">
-			<div className="col-md-2 pl-2 p4-2">
+		<div className="row w-100 DashBoardMainStyle">
+			<div className="mobileNav col-12">
+				<MobileSideBar />
+			</div>
+			<div className="col-md-2 pl-2 p4-2 desktopNav">
 				<Sidebar />
 			</div>
-			<div className="col-md-10 p-2 d-flex justify-content-center mt-5">
+			<div className="col-md-10  mt-5 ml-auto mr-auto dashboardMainPart">
 				<Switch>
 					<Route exact path={path}>
 						<DashboardServices />

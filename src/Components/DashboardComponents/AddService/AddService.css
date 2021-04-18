@@ -4,6 +4,8 @@
 	background-color: darkgrey;
 	min-height: 500px;
 	padding: 30px;
+	width: 50%;
+	margin: 0 auto;
 }
 
 .submitButton {
@@ -72,4 +74,10 @@
 }
 .submitButton:hover .submitButton__vertical {
 	transform: scaleY(0);
+}
+
+@media only screen and (max-width: 900px) {
+	.addServicePart {
+		width: 80%;
+	}
 }

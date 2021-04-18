@@ -8,9 +8,11 @@ const AboutGarage = () => {
 	return (
 		<div className="container">
 			<div className=" row w-100">
-				<div className="col-md-6">
+				<div className="col-lg-6 aboutGarage">
 					<h3>About Our Garage</h3>
-					<SpecialIcon />
+					<div className="aboutPartIcon">
+						<SpecialIcon />
+					</div>
 					<div className="aboutText">
 						<div className="aboutHeader">
 							<h5>
@@ -45,7 +47,7 @@ const AboutGarage = () => {
 						</div>
 					</div>
 				</div>
-				<div className="col-md-5 garagePictures">
+				<div className="col-lg-5 garagePictures">
 					<img
 						className="image1"
 						src={garagePic1}

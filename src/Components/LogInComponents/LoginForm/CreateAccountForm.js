@@ -4,11 +4,8 @@ import { useForm } from "react-hook-form";
 import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
 
 const CreateAccountForm = ({ onSubmit }) => {
-	const {
-		register,
-		handleSubmit,
-		formState: { errors },
-	} = useForm();
+	const { register, handleSubmit } = useForm();
+	const { errors } = useForm();
 	return (
 		<div>
 			<h4 className="text-center text-info mb-3">Sign Up</h4>
@@ -65,7 +62,11 @@ const CreateAccountForm = ({ onSubmit }) => {
 					)}
 				</div>
 				<div className="nameBox">
-					<Button className=" w-100  " type="submit">
+					<Button
+						variant="primary"
+						className=" w-100  "
+						type="submit"
+					>
 						Sign Up
 					</Button>
 				</div>

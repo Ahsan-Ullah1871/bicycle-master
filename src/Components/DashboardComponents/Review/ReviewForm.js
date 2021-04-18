@@ -42,7 +42,7 @@ const ReviewForm = ({ handleUploadImage, onSubmit }) => {
 				<Form.Row>
 					<Form.Group as={Col}>
 						<Form.Label>Your Image</Form.Label>
-						<Form.File custom>
+						<Form.File custom style={{zIndex:"0"}}>
 							<Form.File.Input
 								isValid
 								onChange={(event) =>

@@ -20,7 +20,7 @@ const LoginPage = () => {
 		<>
 			<NavBar />
 			<div className="  loginPagePart  ">
-				<div className="col  align-items-center justify-content-center registerForm ">
+				<div className="col d-flex align-items-center justify-content-center registerForm ">
 					<RegisterAccountForm />
 				</div>
 			</div>

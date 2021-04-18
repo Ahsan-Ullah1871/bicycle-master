@@ -6,6 +6,7 @@ import { useHistory } from "react-router";
 import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
 import ReviewForm from "./ReviewForm";
 import SuccessMessage from "../../SharedComponents/SuccessMessage/SuccessMessage";
+import "./Review.css";
 
 const Review = () => {
 	const [photoUrl, setPhotoUrl] = useState(null);
@@ -40,38 +41,33 @@ const Review = () => {
 			});
 	};
 
-	const reviewPart = {
-		color: "cornsilk",
-		fontWeight: "bold",
-		backgroundColor: "darkgrey",
-		width: "500px",
-		minHeight: " 200px",
-		padding: " 50px",
-	};
-
 	return (
-		<div className="reviewPart" style={reviewPart}>
-			<h3 className="text-center">Happy Customers</h3>
-			<div className="icon  d-flex justify-content-center mb-3">
-				<SpecialIcon />
-			</div>
-			<div>
-				{isSubmit ? (
-					<div className="d-flex justify-content-center">
-						<SuccessMessage
-							successText={
-								"Your review  added successfully"
+		<>
+			<div className="reviewPart">
+				<h3 className="text-center">Happy Customers</h3>
+				<div className="icon  d-flex justify-content-center mb-3">
+					<SpecialIcon />
+				</div>
+				<div>
+					{isSubmit ? (
+						<div className="d-flex justify-content-center">
+							<SuccessMessage
+								successText={
+									"Your review  added successfully"
+								}
+							/>
+						</div>
+					) : (
+						<ReviewForm
+							handleUploadImage={
+								handleUploadImage
 							}
+							onSubmit={onSubmit}
 						/>
-					</div>
-				) : (
-					<ReviewForm
-						handleUploadImage={handleUploadImage}
-						onSubmit={onSubmit}
-					/>
-				)}
+					)}
+				</div>
 			</div>
-		</div>
+		</>
 	);
 };
 

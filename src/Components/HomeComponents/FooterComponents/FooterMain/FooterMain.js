@@ -16,18 +16,21 @@ const FooterMain = () => {
 			<div className="container row ">
 				<div className="col-md-5">
 					<div className="logo">
-						<img src={logo} alt="" />
+						<img
+							style={{
+								width: "200px",
+								height: "200px",
+							}}
+							src={logo}
+							alt=""
+						/>
 						<p>
-							Elit duis tristique
-							sollicitudin nibh sit amet.
-							Integer feugiat scelerisque
-							varius morbi enim nunc
-							faucibus. Eget duis at tellus
-							at urna condimentum.
+							We always try to stay with our
+							best service.
 						</p>
 					</div>
 				</div>
-				<div className="col-md-3">
+				<div className="col-md-3 allLinks">
 					<h3>Quick Links</h3>
 					<div className="links">
 						<div className="link d-flex align-items-center">
@@ -40,7 +43,10 @@ const FooterMain = () => {
 							<FontAwesomeIcon
 								icon={faArrowRight}
 							/>
-							<Link> Services</Link>
+							<Link to="dashboard/dashboardBookNow">
+								{" "}
+								Services
+							</Link>
 						</div>
 						<div className="link d-flex align-items-center">
 							<FontAwesomeIcon
@@ -52,7 +58,9 @@ const FooterMain = () => {
 							<FontAwesomeIcon
 								icon={faArrowRight}
 							/>
-							<Link> Dashboard</Link>
+							<Link to="/dashboard">
+								Dashboard
+							</Link>
 						</div>
 					</div>
 				</div>

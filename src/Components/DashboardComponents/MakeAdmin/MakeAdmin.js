@@ -4,6 +4,7 @@ import { Col, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
 import SuccessMessage from "../../SharedComponents/SuccessMessage/SuccessMessage";
+import "./MakeAdmin.css";
 
 const MakeAdmin = () => {
 	const [isSubmit, setIsSubmit] = useState(false);
@@ -21,18 +22,10 @@ const MakeAdmin = () => {
 	};
 	const { register, handleSubmit } = useForm();
 
-	const makeAdminStyle = {
-		color: "cornsilk",
-		fontWeight: "bold",
-		backgroundColor: "darkgrey",
-		width: "500px",
-		height: " 400px",
-		padding: " 50px",
-		margin: "0 auto",
-	};
+
 
 	return (
-		<div style={makeAdminStyle}>
+		<div className="makeAdminSection">
 			<h3 className="text-center">Make Admin</h3>
 			<div className="icon  d-flex justify-content-center ">
 				<SpecialIcon />

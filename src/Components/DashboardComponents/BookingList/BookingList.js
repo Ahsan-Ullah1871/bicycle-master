@@ -19,11 +19,10 @@ const BookingList = () => {
 
 	const bookingListStyle = {
 		width: "80%",
-		height: "500px",
+		minHeight: "500px",
 		backgroundColor: "gray",
 		padding: " 50px",
 		margin: "0 auto",
-		overflow: "scroll",
 	};
 
 	return (

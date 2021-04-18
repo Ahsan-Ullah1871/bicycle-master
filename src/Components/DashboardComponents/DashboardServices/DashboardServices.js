@@ -15,19 +15,22 @@ const DashboardServices = () => {
 		});
 	}, []);
 	return (
-		<div className="  ">
-			<div className="servicesHeader justify-content-center    ">
+		<>
+			<div className="servicesHeader justify-content-center ">
 				<h3>Our Services</h3>
 				<div className="icon  d-flex justify-content-center mb-5">
 					<SpecialIcon />
 				</div>
 			</div>
-			<div className="row w-100 d-flex justify-content-center mt-5">
+			<div
+				className="row w-100 d-flex justify-content-center mt-5  "
+				style={{ margin: "10px auto" }}
+			>
 				{services?.map((service) => (
 					<ServicesCard service={service} />
 				))}
 			</div>
-		</div>
+		</>
 	);
 };
 

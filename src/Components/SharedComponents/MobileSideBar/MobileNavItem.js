@@ -1,6 +1,4 @@
 import React from "react";
-import "./Sidebar.css";
-import logo from "../../../images/footerLogo.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faListAlt,
@@ -22,10 +20,10 @@ import {
 	logOutMethod,
 } from "../../LogInComponents/LoginManegment/LoginManegment";
 import axios from "axios";
-import AdminSideBar from "./AdminSideBar";
 import { Nav, Navbar } from "react-bootstrap";
+import AdminSideBar from "../Sidebar/AdminSideBar";
 
-const Sidebar = () => {
+const MobileNavItem = ({ closeModal }) => {
 	initializeFramework();
 
 	const [user, setUser] = useContext(UserContext);
@@ -52,6 +50,10 @@ const Sidebar = () => {
 		}
 	}, [allAdmin]);
 
+	const closeNav = () => {
+		closeModal();
+	};
+
 	const logOutHandle = () => {
 		logOutMethod();
 		setUser(null);
@@ -59,19 +61,7 @@ const Sidebar = () => {
 	};
 
 	return (
-		<div className="sidebar">
-			<Link to="/home">
-				<div className="row d-flex justify-content-center">
-					<img
-						style={{
-							width: "130px",
-							height: "130px",
-						}}
-						src={logo}
-						alt=""
-					/>
-				</div>
-			</Link>
+		<div className="sidebar" onClick={closeNav}>
 			<Link to={`${url}/dashboardBookNow`}>
 				<div className="row    ml-4 align-items-center ">
 					<FontAwesomeIcon
@@ -116,4 +106,4 @@ const Sidebar = () => {
 	);
 };
 
-export default Sidebar;
+export default MobileNavItem;

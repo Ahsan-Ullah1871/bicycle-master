@@ -1,6 +1,7 @@
 import React from "react";
 import { Button } from "react-bootstrap";
 import { useForm } from "react-hook-form";
+import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
 
 const SignInForm = ({ onSubmit }) => {
 	const {
@@ -10,7 +11,10 @@ const SignInForm = ({ onSubmit }) => {
 	} = useForm();
 	return (
 		<div>
-			<h4 className="text-center special-text mb-5">Sign In</h4>
+			<h4 className="text-center text-info   mb-3">Sign In</h4>
+			<div className="icon  d-flex justify-content-center mb-2">
+				<SpecialIcon />
+			</div>
 			<form action="" onSubmit={handleSubmit(onSubmit)}>
 				<div className="emailBox">
 					<input
@@ -47,6 +51,7 @@ const SignInForm = ({ onSubmit }) => {
 				</div>
 				<div className="nameBox">
 					<Button
+						variant="primary"
 						className=" w-100 special-Btn"
 						type="submit"
 					>

@@ -7,11 +7,11 @@ import {
 	faYoutubeSquare,
 } from "@fortawesome/free-brands-svg-icons";
 
-import { Link } from "react-router-dom";
+import { Link as a } from "react-router-dom";
 
 const FooterLastPart = () => {
 	return (
-		<div className="d-flex flex-wrap justify-content-between align-items-center">
+		<div className="d-flex flex-wrap justify-content-between align-items-center  ">
 			<div className="copyRightAlert">
 				<h6>
 					©2020 BiCycle-Master . All Rights Reserved By
@@ -19,17 +19,27 @@ const FooterLastPart = () => {
 				</h6>
 			</div>
 			<div className="socialLinks">
-				<Link>
+				<a
+					href="https://www.facebook.com/Ahsan1871"
+					target="_blank"
+					rel="noopener noreferrer"
+				>
 					<FontAwesomeIcon icon={faFacebookSquare} />
-				</Link>
+				</a>
 
-				<Link>
+				<a
+					href="https://twitter.com/login"
+					rel="noopener noreferrer"
+				>
 					<FontAwesomeIcon icon={faTwitterSquare} />
-				</Link>
+				</a>
 
-				<Link>
+				<a
+					href="https://www.youtube.com/channel/UCkmGfi4w60qQa34z-YwD3hQ"
+					rel="noopener noreferrer"
+				>
 					<FontAwesomeIcon icon={faYoutubeSquare} />
-				</Link>
+				</a>
 			</div>
 		</div>
 	);

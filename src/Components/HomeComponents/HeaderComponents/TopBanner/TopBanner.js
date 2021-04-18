@@ -11,7 +11,7 @@ const TopBanner = () => {
 	return (
 		<>
 			<div className="topBanner text-center align-items-center">
-				<h1 className="w-70  ">
+				<h1 className="">
 					Professional Bicycle Repair & Custom Services
 				</h1>
 				<div className="bookNowBtn mt-4">

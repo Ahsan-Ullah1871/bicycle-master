@@ -6,7 +6,7 @@ import MaintenanceImage from "../../../../images/maintenance.png";
 
 const FeaturePart = () => {
 	return (
-		<div className="featureRow w-100 d-flex justify-content-center">
+		<div className="featureRow w-100 d-flex flex-wrap justify-content-center">
 			<div className=" featureCol">
 				<div className="featureNestedDiv">
 					<div className="featureVector">

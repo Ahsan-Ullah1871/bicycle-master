@@ -12,19 +12,16 @@
 	font-size: 80px;
 	color: white;
 	font-weight: bold;
+	width: 70%;
+	text-align: center;
+	margin: 0 auto;
 }
-.special-Button {
-	background-color: #c75239;
-	padding: 15px 30px;
-	font-size: 20px;
-	color: blanchedalmond;
-	border: none;
-	border-color: none;
-}
-.special-Button:hover,
-.special-Button:focus {
-	box-shadow: 0 0.5em 0.5em -0.4em var(--hover);
-	transform: translateY(-0.35em);
-	background-color: #161111;
-	transition: transform 0.9s ease-in-out;
+
+@media only screen and (max-width: 900px) {
+	.topBanner h1 {
+		font-size: 50px;
+		color: white;
+		font-weight: bold;
+		width: 90%;
+	}
 }

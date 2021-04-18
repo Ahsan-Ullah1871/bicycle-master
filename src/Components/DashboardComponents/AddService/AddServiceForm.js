@@ -31,7 +31,10 @@ const AddServiceForm = ({ handleUploadImage, onSubmit }) => {
 						controlId="formGridPassword"
 					>
 						<Form.Label>Service Icon</Form.Label>
-						<Form.File custom>
+						<Form.File
+							custom
+							style={{ zIndex: "0" }}
+						>
 							<Form.File.Input
 								isValid
 								onChange={(event) =>

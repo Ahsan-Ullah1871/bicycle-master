@@ -23,14 +23,14 @@
 	margin-bottom: 10px;
 }
 
-.bookNowBtn .btn {
+.bookNowBtn > .btn {
 	margin: 10px auto;
 	border: none;
 	padding: 10px 22px;
 	font-size: 20px;
 	position: relative;
 }
-.bookNowBtn .btn::before {
+.bookNowBtn > .btn::before {
 	transition: all 0.85s cubic-bezier(0.68, -0.55, 0.265, 1.55);
 	content: "";
 	width: 30%;
@@ -41,19 +41,19 @@
 	left: 0;
 }
 
-.bookNowBtn .btn.rounded {
+.bookNowBtn > .btn.rounded {
 	border-radius: 30px;
 }
-.bookNowBtn .btn.rounded .text-green {
+.bookNowBtn > .btn.rounded .text-green {
 	color: #00f0b5;
 	mix-blend-mode: difference;
 }
-.bookNowBtn .btn.rounded::before {
+.bookNowBtn > .btn.rounded::before {
 	border-radius: 50px;
 	width: 15%;
 	background: #00f0b5;
 }
-.bookNowBtn .btn.rounded:hover::before {
+.bookNowBtn > .btn.rounded:hover::before {
 	background: #00f0b5;
 	width: 100%;
 }
