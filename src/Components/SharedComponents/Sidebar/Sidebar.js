@@ -55,7 +55,6 @@ const Sidebar = () => {
 	const logOutHandle = () => {
 		logOutMethod();
 		setUser(null);
-		sessionStorage.removeItem("token");
 	};
 
 	return (

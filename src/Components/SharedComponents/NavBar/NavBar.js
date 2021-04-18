@@ -1,10 +1,24 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import "./Navbar.css";
 import { Link } from "react-router-dom";
 import logo from "../../../images/logo2.png";
-import { Nav, Navbar } from "react-bootstrap";
+import { Button, Nav, Navbar } from "react-bootstrap";
+import { UserContext } from "../../../App";
+import UserAction from "./UserAction/UserAction";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faSortDown } from "@fortawesome/free-solid-svg-icons";
+import profileImage from "../../../images/profile.png";
 
 const NavBar = () => {
+	const [user, setUser] = useContext(UserContext);
+	const [toggle, setToggle] = useState("none");
+	const profileOpen = () => {
+		toggle === "none" ? setToggle(" ") : setToggle("none");
+	};
+	const profileClose=()=>{
+		setToggle(" ");
+	}
+ 
 	return (
 		<Navbar expand="lg" className="NavBarPart">
 			<Navbar.Brand href="/home" className="logo">
@@ -19,10 +33,33 @@ const NavBar = () => {
 						<Link to="/dashboard/dashboardBookNow">
 							Services
 						</Link>
-						<Link to="/login">LogIn</Link>
+						{user?.email ? (
+							<Button
+								onClick={profileOpen}
+								className="profileBtn"
+							>
+								<img
+									src={
+										user?.photoURL ||
+										profileImage
+									}
+									alt=""
+								/>
+								Profile
+								<FontAwesomeIcon
+									className="ml-2"
+									icon={faSortDown}
+								/>
+							</Button>
+						) : (
+							<Link to="/login">LogIn</Link>
+						)}
 					</div>
 				</Nav>
 			</Navbar.Collapse>
+			<div className="nestedNav" style={{ display: toggle }} onClick={profileClose}>
+				<UserAction />
+			</div>
 		</Navbar>
 	);
 };

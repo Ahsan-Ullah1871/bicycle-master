@@ -8,7 +8,7 @@ const stripePromise = loadStripe(
 );
 const ProcessPayment = ({ totalAmount, setPaymentData }) => {
 	return (
-		<div style={{ width: "400px" }}>
+		<div style={{ width: "300px", margin: "0 auto" }}>
 			<h5 className="text-center " style={{ color: "white" }}>
 				Payment By Card
 			</h5>
