@@ -23,7 +23,7 @@ const UserAction = () => {
 					{user?.displayName}🙂
 				</Link>
 				<Link to="/dashboard">Dashboard</Link>
-				<Link>Gallery</Link>
+
 				{user?.email ? (
 					<Link onClick={logOutHandle}>Log Out</Link>
 				) : (

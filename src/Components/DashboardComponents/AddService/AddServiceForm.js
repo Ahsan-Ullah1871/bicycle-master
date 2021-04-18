@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Form } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const AddServiceForm = ({ handleUploadImage, onSubmit }) => {
 	const { register, handleSubmit } = useForm();
@@ -26,11 +28,20 @@ const AddServiceForm = ({ handleUploadImage, onSubmit }) => {
 					</Form.Group>
 				</Form.Row>
 				<Form.Row>
-					<Form.Group
-						as={Col}
-						controlId="formGridPassword"
-					>
+					<Form.Group as={Col}>
 						<Form.Label>Service Icon</Form.Label>
+
+						<ToastContainer
+							position="top-right"
+							autoClose={2000}
+							hideProgressBar={false}
+							newestOnTop={false}
+							closeOnClick
+							rtl={false}
+							pauseOnFocusLoss
+							draggable
+							pauseOnHover
+						/>
 						<Form.File
 							custom
 							style={{ zIndex: "0" }}
@@ -47,6 +58,7 @@ const AddServiceForm = ({ handleUploadImage, onSubmit }) => {
 								Choose Icon
 							</Form.File.Label>
 						</Form.File>
+						<ToastContainer />
 					</Form.Group>
 				</Form.Row>
 				<Form.Row>

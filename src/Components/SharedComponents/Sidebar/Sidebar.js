@@ -11,6 +11,7 @@ import {
 	faClipboard,
 	faSignOutAlt,
 	faCartPlus,
+	faHome,
 } from "@fortawesome/free-solid-svg-icons";
 import { Link, useRouteMatch } from "react-router-dom";
 import { useContext } from "react";
@@ -102,6 +103,15 @@ const Sidebar = () => {
 			{isAdmin && <AdminSideBar />}
 
 			<br />
+			<Link to="/home">
+				<div className="row mt-4 ml-4 align-items-center">
+					<FontAwesomeIcon
+						className="mr-2"
+						icon={faHome}
+					/>
+					Home
+				</div>
+			</Link>
 			<Link onClick={logOutHandle}>
 				<div className="row mt-4 ml-4 align-items-center">
 					<FontAwesomeIcon

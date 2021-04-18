@@ -7,6 +7,7 @@ import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
 import ReviewForm from "./ReviewForm";
 import SuccessMessage from "../../SharedComponents/SuccessMessage/SuccessMessage";
 import "./Review.css";
+import { ToastContainer, toast } from "react-toastify";
 
 const Review = () => {
 	const [photoUrl, setPhotoUrl] = useState(null);
@@ -26,6 +27,7 @@ const Review = () => {
 	};
 
 	const handleUploadImage = (event) => {
+		toast("Pleas 😶 wait 5 seconde for upload icon");
 		console.log(event.target.files[0]);
 		const ImageData = new FormData();
 		ImageData.set("key", "85dea4d9aec0e6e2a9113a6126e66123");

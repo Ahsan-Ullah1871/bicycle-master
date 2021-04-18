@@ -2,6 +2,8 @@ import React from "react";
 import { Col, Form, FormControl, InputGroup } from "react-bootstrap";
 import { useForm } from "react-hook-form";
 import { useHistory } from "react-router";
+import { ToastContainer, toast } from "react-toastify";
+import "react-toastify/dist/ReactToastify.css";
 
 const ReviewForm = ({ handleUploadImage, onSubmit }) => {
 	const { register, handleSubmit } = useForm();
@@ -42,7 +44,22 @@ const ReviewForm = ({ handleUploadImage, onSubmit }) => {
 				<Form.Row>
 					<Form.Group as={Col}>
 						<Form.Label>Your Image</Form.Label>
-						<Form.File custom style={{zIndex:"0"}}>
+
+						<ToastContainer
+							position="top-right"
+							autoClose={4000}
+							hideProgressBar={false}
+							newestOnTop={false}
+							closeOnClick
+							rtl={false}
+							pauseOnFocusLoss
+							draggable
+							pauseOnHover
+						/>
+						<Form.File
+							custom
+							style={{ zIndex: "0" }}
+						>
 							<Form.File.Input
 								isValid
 								onChange={(event) =>
@@ -51,10 +68,11 @@ const ReviewForm = ({ handleUploadImage, onSubmit }) => {
 									)
 								}
 							/>
-							<Form.File.Label data-browse="Add Image">
+							<Form.File.Label data-browse="Add Icon">
 								Choose Image
 							</Form.File.Label>
 						</Form.File>
+						<ToastContainer />
 					</Form.Group>
 				</Form.Row>
 				<Form.Row>

@@ -25,15 +25,7 @@ const AdminSideBar = () => {
 					</div>
 				</Link>
 
-				<Link to={`${url}/addMember`}>
-					<div className="row mt-4 ml-4 align-items-center">
-						<FontAwesomeIcon
-							className="mr-2"
-							icon={faUserAlt}
-						/>
-						Add Team Member
-					</div>
-				</Link>
+				 
 				<Link to={`${url}/addService`}>
 					<div className="row mt-4 ml-4 align-items-center">
 						<FontAwesomeIcon

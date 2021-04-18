@@ -7,6 +7,7 @@ import "./AddService.css";
 import AddServiceForm from "./AddServiceForm";
 import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
 import SuccessMessage from "../../SharedComponents/SuccessMessage/SuccessMessage";
+import { ToastContainer, toast } from "react-toastify";
 
 const AddService = () => {
 	const [photoUrl, setPhotoUrl] = useState(null);
@@ -26,6 +27,7 @@ const AddService = () => {
 	};
 
 	const handleUploadImage = (event) => {
+		toast("Pleas 😶 wait Two seconde for upload icon");
 		const ImageData = new FormData();
 		ImageData.set("key", "85dea4d9aec0e6e2a9113a6126e66123");
 		ImageData.append("image", event.target.files[0]);
