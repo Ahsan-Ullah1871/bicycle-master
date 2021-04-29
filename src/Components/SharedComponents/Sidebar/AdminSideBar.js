@@ -25,7 +25,6 @@ const AdminSideBar = () => {
 					</div>
 				</Link>
 
-				 
 				<Link to={`${url}/addService`}>
 					<div className="row mt-4 ml-4 align-items-center">
 						<FontAwesomeIcon

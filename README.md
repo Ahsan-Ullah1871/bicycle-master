@@ -16,13 +16,25 @@
 ## Description
 
 You can get bi-cycle repair service from my website🥰🥰!!
-Some features of my project:
-1.This site is responsive for mobile and Desktop.
-2.In home page you will see many section.Like: Navbar,Top Banner, Feature section,About Section,Service Section,Choose Us section and Footer section etc..
-3.Here I am use some npm package for style.
-4.Here is a admin page.which is private page just for Admin.
-5.If you Book service, you can see your Booking service in Booking List.
-6.Here I am create login page by firebase authentication.
+<br/>
+Packages: <br/>
+1.Used React Framework, JavaScript
+Language, Node.JS for
+Backend, and MongoDB as database. <br/>
+2.Firebase for authentication.
+<br/>
+3.React-bootstrap for style frontend side.
+<br/>
+4.React hook form to get data from the form. <br/> 5. Particles-bg npm package for login page background style.
+<br/>
+
+Some features of my project: <br/>
+1.This site is responsive for mobile and Desktop.<br/>
+2.In home page you will see many section.Like: Navbar,Top Banner, Feature section,About Section,Service Section,Choose Us section and Footer section etc..<br/>
+3.Here I am use some npm package for style.<br/>
+4.Here is a admin page.which is private page just for Admin.<br/>
+5.If you Book service, you can see your Booking service in Booking List.<br/>
+6.Here I am create login page by firebase authentication.<br/>
 
 ---
 

@@ -24,6 +24,7 @@ import DashboardServices from "../DashboardServices/DashboardServices";
 import ManageServices from "../ManageServices/ManageServices";
 import { Nav, Navbar } from "react-bootstrap";
 import MobileSideBar from "../../SharedComponents/MobileSideBar/MobileSideBar";
+import SaveToGallery from "../SaveToGallery/SaveToGallery";
 
 const DashboardMain = () => {
 	const [user, setUser] = useContext(UserContext);
@@ -65,6 +66,9 @@ const DashboardMain = () => {
 					</Route>
 					<Route path={`${path}/addService`}>
 						<AddService />
+					</Route>
+					<Route path={`${path}/saveToGallery`}>
+						<SaveToGallery />
 					</Route>
 					<Route path={`${path}/addAdmin`}>
 						<MakeAdmin />

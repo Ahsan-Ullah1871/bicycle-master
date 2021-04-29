@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
 import ServicesCard from "../../HomeComponents/ServicesCard/ServicesCard";
+import serviceLoaderSpinner from "../../../Spinner/service.gif";
 
 const DashboardServices = () => {
 	const [services, setServices] = useState(null);
@@ -26,9 +27,13 @@ const DashboardServices = () => {
 				className="row w-100 d-flex justify-content-center mt-5  "
 				style={{ margin: "10px auto" }}
 			>
-				{services?.map((service) => (
-					<ServicesCard service={service} />
-				))}
+				{services ? (
+					services.map((service) => (
+						<ServicesCard service={service} />
+					))
+				) : (
+					<img src={serviceLoaderSpinner} alt="" />
+				)}
 			</div>
 		</>
 	);

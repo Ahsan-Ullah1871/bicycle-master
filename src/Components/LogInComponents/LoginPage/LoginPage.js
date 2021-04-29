@@ -4,6 +4,7 @@ import RegisterAccountForm from "../LoginForm/RegisterAccount";
 import NavBar from "../../SharedComponents/NavBar/NavBar";
 import { useHistory, useLocation } from "react-router";
 import { UserContext } from "../../../App";
+import ParticlesBg from "particles-bg";
 
 const LoginPage = () => {
 	const [user, setUser] = useContext(UserContext);
@@ -22,6 +23,7 @@ const LoginPage = () => {
 			<div className="  loginPagePart  ">
 				<div className="col d-flex align-items-center justify-content-center registerForm ">
 					<RegisterAccountForm />
+					<ParticlesBg type="lines" bg={true} />
 				</div>
 			</div>
 		</>

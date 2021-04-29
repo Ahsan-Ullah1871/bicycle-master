@@ -4,6 +4,7 @@ import icon from "../../../images/services.png";
 import ServicesCard from "../ServicesCard/ServicesCard";
 import SpecialIcon from "../../SharedComponents/SpecialIcon/SpecialIcon";
 import axios from "axios";
+import serviceLoader from "../../../Spinner/service.gif";
 
 const Services = () => {
 	const [services, setServices] = useState(null);
@@ -24,15 +25,18 @@ const Services = () => {
 					<SpecialIcon />
 				</div>
 				<p style={{ fontSize: "25px" }}>
-					Consectetur adipiscing elit, sed do eiusmod
-					tempor incididunt ut labore et dolore magna
-					aliqua.
+					We always strive to provide you with the best
+					and most up-to-date service
 				</p>
 			</div>
 			<div className="row w-100 d-flex justify-content-center mt-5">
-				{services?.map((service) => (
-					<ServicesCard service={service} />
-				))}
+				{services ? (
+					services.map((service) => (
+						<ServicesCard service={service} />
+					))
+				) : (
+					<img src={serviceLoader} alt="" />
+				)}
 			</div>
 		</div>
 	);

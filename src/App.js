@@ -8,6 +8,7 @@ import DashboardMain from "./Components/DashboardComponents/DashboardMainPart/Da
 import { initializeFramework } from "./Components/LogInComponents/LoginManegment/LoginManegment";
 import firebase from "firebase/app";
 import "firebase/auth";
+import GalleryMainPart from "./Components/GalleryComponents/GallaryMainPart/GalleryMainPart";
 
 export const UserContext = createContext();
 function App() {
@@ -34,6 +35,9 @@ function App() {
 					</Route>
 					<Route path="/home">
 						<HomePart />
+					</Route>
+					<Route path="/gallery">
+						<GalleryMainPart />
 					</Route>
 					<PrivateRoute path="/dashboard">
 						<DashboardMain />

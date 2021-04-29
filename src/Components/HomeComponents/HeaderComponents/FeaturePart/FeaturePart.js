@@ -3,11 +3,16 @@ import "./FeaturePart.css";
 import DiagnosticsImage from "../../../../images/Diagnostics.png";
 import ServicesImage from "../../../../images/services.png";
 import MaintenanceImage from "../../../../images/maintenance.png";
+import { motion } from "framer-motion";
 
 const FeaturePart = () => {
 	return (
 		<div className="featureRow w-100 d-flex flex-wrap justify-content-center">
-			<div className=" featureCol">
+			<motion.div
+				className=" featureCol"
+				animate={{ scale: 1.1 }}
+				transition={{ duration: 0.5 }}
+			>
 				<div className="featureNestedDiv">
 					<div className="featureVector">
 						<img src={DiagnosticsImage} alt="" />
@@ -23,8 +28,12 @@ const FeaturePart = () => {
 						</h6>
 					</div>
 				</div>
-			</div>
-			<div className=" featureCol">
+			</motion.div>
+			<motion.div
+				className=" featureCol"
+				animate={{ scale: 1.1 }}
+				transition={{ duration: 0.5 }}
+			>
 				<div className="featureNestedDiv">
 					<div className="featureVector">
 						<img src={MaintenanceImage} alt="" />
@@ -41,8 +50,12 @@ const FeaturePart = () => {
 						</h6>
 					</div>
 				</div>
-			</div>
-			<div className=" featureCol">
+			</motion.div>
+			<motion.div
+				className=" featureCol"
+				animate={{ scale: 1.1 }}
+				transition={{ duration: 0.5 }}
+			>
 				<div className="featureNestedDiv">
 					<div className="featureVector">
 						<img src={ServicesImage} alt="" />
@@ -59,7 +72,7 @@ const FeaturePart = () => {
 						</h6>
 					</div>
 				</div>
-			</div>
+			</motion.div>
 		</div>
 	);
 };

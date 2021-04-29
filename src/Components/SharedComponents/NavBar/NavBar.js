@@ -15,10 +15,10 @@ const NavBar = () => {
 	const profileOpen = () => {
 		toggle === "none" ? setToggle(" ") : setToggle("none");
 	};
-	const profileClose=()=>{
+	const profileClose = () => {
 		setToggle(" ");
-	}
- 
+	};
+
 	return (
 		<Navbar expand="lg" className="NavBarPart">
 			<Navbar.Brand href="/home" className="logo">
@@ -30,6 +30,7 @@ const NavBar = () => {
 					<div className="navMenu">
 						<Link to="/home">Home</Link>
 						<Link to="/dashboard">Dashboard</Link>
+						<Link to="/gallery">Gallery</Link>
 						<Link to="/dashboard/dashboardBookNow">
 							Services
 						</Link>
@@ -57,7 +58,11 @@ const NavBar = () => {
 					</div>
 				</Nav>
 			</Navbar.Collapse>
-			<div className="nestedNav" style={{ display: toggle }} onClick={profileClose}>
+			<div
+				className="nestedNav"
+				style={{ display: toggle }}
+				onClick={profileClose}
+			>
 				<UserAction />
 			</div>
 		</Navbar>

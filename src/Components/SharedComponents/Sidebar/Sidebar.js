@@ -99,10 +99,18 @@ const Sidebar = () => {
 					Review
 				</div>
 			</Link>
+			<Link to={`${url}/saveToGallery`}>
+				<div className="row mt-4 ml-4 align-items-center">
+					<FontAwesomeIcon
+						className="mr-2"
+						icon={faPlus}
+					/>
+					Save to Gallery
+				</div>
+			</Link>
 			<hr style={{ borderBottom: "2px solid white" }} />
 			{isAdmin && <AdminSideBar />}
 
-			<br />
 			<Link to="/home">
 				<div className="row mt-4 ml-4 align-items-center">
 					<FontAwesomeIcon
